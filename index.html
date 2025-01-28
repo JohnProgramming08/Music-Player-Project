@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Player</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+
+    <body>
+        <header>
+            <div id="github">
+                <a href="https://github.com/JohnProgramming08" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <div id="menu-button">
+                <i id="menu-button" class="fas fa-bars"></i>
+            </div>
+            <ul id="menu"></ul>
+
+            <h1>Free and Independent Music Player</h1>
+        </header>
+
+        <main>
+            <div class="music-player">
+                <img id="song-cover" src="https://people.com/thmb/8jq3bMokr0HV3OqZYpadWZAFzJk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(353x0:355x2):format(webp)/avril-lavigne-0-c837748df95542a4b5cd511cbde2300d.png" alt="Song Cover">
+                <div class="song-controls">
+                    <div id="backward">
+                        <i class="fas fa-backward"></i>
+                    </div>
+                    <div id="play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div id="forward">
+                        <i class="fas fa-forward"></i>
+                    </div>
+                </div>
+
+                <div class="song-info">
+                    <h2 id="song-title">Complicated</h2>
+                    <h3 id="song-artist">Avril Lavigne</h3>
+                </div>
+                <iframe class="hidden" id="song" width="500" height="400" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </main>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

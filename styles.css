@@ -1,0 +1,133 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'sans-serif';
+}
+
+/* Header Styles */
+header {
+    background-color: black;
+    color: white;
+    height: 25vh;
+    padding: 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i {
+    font-size: 5rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+    color: white;
+}
+
+i:hover {
+    color: #4444dd;
+    transition: 0.5s ease;
+}
+
+h1 {
+    margin-left: 10%;
+    font-size: 3.5rem;
+}
+
+#menu-button {
+    margin-right: 20%;
+}
+
+#menu {
+    display: none;
+    flex-direction: column;
+    width: 15%;
+    margin-right: 10%;
+    position: absolute;
+    z-index: 1000;
+    left: 320px;
+    top: 80px;
+    background-color: #222222;
+    border-radius: 20px;;
+}
+
+.song {
+    padding: 10px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.song:hover {
+    background-color: #333333;
+}
+
+.song:last-child {
+    border-bottom: none;
+}
+
+/* Main Styles */
+main {
+    background: linear-gradient(270deg, blue, black);
+    background-size: 400%, 400%;
+    color: white;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0%, 50%;
+    }
+    50% {
+        background-position: 50%, 50%;
+    }
+    100% {
+        background-position: 0%, 50%;
+    }
+}
+
+.music-player {
+    height: 75vh;
+    width: 60%;
+    background-color: #111111;
+    margin: 0 auto;
+    padding: 3vh;
+}
+
+#song-cover {
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    border: 3px solid white;
+    height: 400px;
+    width: 400px; 
+}
+
+.song-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.song-info {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#song-title {
+    font-size: 3rem;
+}
+
+#song-artist {
+    font-size: 2rem;
+}
+
+.hidden {
+    display: none;
+}
